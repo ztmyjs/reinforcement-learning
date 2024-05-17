@@ -22,5 +22,5 @@ The Acrobot environment from Gymnasium consists of two links connected by a join
   - Q learning with neither target networks nor replay buffers
   - Q learning with replay buffers but without target networks
   - Q learning with target networks but without replay buffers
-- **Point 1.3**: Select any one hyperparameter of the algorithm and study its effect on the agent’s performance.
+- **Point 1.3**: Select five values of the learning rate of the algorithm and study its effect on the agent’s performance.
 - **Point 1.4**: Apply Stable Baselines 3 package and use its implementation of Deep Q Network to learn the optimal policy and observe the performance with comparison.
