@@ -7,7 +7,7 @@ This repository contains implementations for various reinforcement learning algo
 Frozen Lake environment from Gymnasium (formerly OpenAI Gym).
 
 ## Math Fomular
-![equation](https://latex.codecogs.com/gif.latex?Q_%5Cpi%28s%2C%20a%29%20%3D%20%5Csum_%7Bs%27%20%5Cin%20S%7D%20T%28s%27%7Cs%2C%20a%29%5C%7BR%28s%2C%20a%2C%20s%27%29%20%2B%20%5Cgamma%20V_%5Cpi%28s%27%29%5C%7D.)
+Q_π(s, a) = ∑_{s' ∈ S} T(s'|s, a){R(s, a, s') + γV_π(s')}
 
 
 ## Contents
@@ -20,8 +20,8 @@ Frozen Lake environment from Gymnasium (formerly OpenAI Gym).
 - **Point 1.3**: Compute the Qπ values of a policy π.
 - **Point 2.1**: Compute the optimal policy π∗, V∗, and Q∗.
 - **Point 2.2**: For a discount factor of γ = 0.99, generate and report the following two plots
--   • maxs |V (s) − Vprevious_iteration(s)| with respect to iteration number
--   • maxs |V (s) − Vfinal_iteration(s)| with respect to iteration number
+- - maxs |V (s) − Vprevious_iteration(s)| with respect to iteration number
+- - maxs |V (s) − Vfinal_iteration(s)| with respect to iteration number
 - **Point 2.3**: For a discount factor of γ = 0.99, observe the number of iterations after which the algorithm converged.
 - **Point 2.4**: Plot the number of iterations after which the algorithm converged with respect to discount factor for γ ∈ {0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99}. 
 - **Point 2.5**: Use the educated guess of the optimal policy to warm start the value iteration algorithm. 
